@@ -118,6 +118,7 @@ ul li a {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 8px;
   text-decoration: none;
+  text-align: center;
   font-weight: 500;
   transition: background 0.2s;
 }
