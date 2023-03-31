@@ -6,6 +6,7 @@
 
 :root {
   --text-color: #fff;
+  --span-text-color: #f3d5e0;
   --bg-url: url(./assets/bg-dark-desktop.jpeg);
   --stroke-color: rgb(242, 230, 242);
   --surface-color: rgba(93, 90, 150, 0.4);
@@ -16,6 +17,7 @@
 
 .light {
   --text-color: #003300;
+  --span-text-color: #717971;
   --bg-url: url(./assets/bg-light-desktop.jpeg);
   --stroke-color: rgb(64, 0, 64);
   --surface-color: rgba(230, 235, 230, 0.4);
@@ -104,14 +106,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 
 ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 24px;
+  padding: 6px 24px;
+  font-size: 14px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
@@ -126,6 +129,11 @@ ul li a {
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1px solid var(--text-color);
+}
+
+.links span {
+  font-size: 12px;
+  color: var(--span-text-color);
 }
 
 .social-links ul {
